@@ -38,7 +38,7 @@ export default {
     margin-top: 40px;
 
     width: 80vw;
-    height: 50vh;
+    height: 70vh;
     border: 2px solid grey;
 
     overflow-y: auto;
