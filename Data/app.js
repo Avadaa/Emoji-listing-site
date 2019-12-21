@@ -33,7 +33,7 @@ readFile.on('line', (line) => {
 
     else if (hex[0] != '' && hex[0] != '#EOF') {
         hex.forEach(emoji => {
-            hexHtml += `&#${emoji};`
+            hexHtml += `&#x${emoji};`
         })
 
         title = line[1].split('.');
