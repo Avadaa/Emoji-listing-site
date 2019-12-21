@@ -33,6 +33,7 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   #emojis {
     margin-top: 40px;
 
@@ -40,9 +41,14 @@ export default {
     height: 50vh;
     border: 2px solid grey;
 
+    overflow-y: auto;
+
     #groups {
       display: flex;
       justify-content: space-around;
+
+      position: sticky;
+      top: 0;
       h2 {
         margin: 0px;
       }
