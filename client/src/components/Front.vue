@@ -6,8 +6,8 @@
     </div>
     <div id="emojis">
       <div id="groups">
-        <h2>groupasd</h2>
-        <h2>subgroupasd</h2>
+        <h2 id="groupH2"></h2>
+        <h2 id="subGroupH2"></h2>
       </div>
       <Emojis />
     </div>

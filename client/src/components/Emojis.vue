@@ -2,8 +2,7 @@
   <div class="container" id="emoji-list">
     <div v-for="(emoji, index) in emojis">
       <p v-html="emoji.hex" class="emoji" v-bind:id="'emoji-' + index"></p>
-      <!--<p class="emoji-name" style="color: white;" v-bind:id="'name' + index">{{emoji.title}}</p>-->
-      <p class="emoji-name" style="color: black;" v-bind:id="' ' + index">{{index}}</p>
+      <p class="emoji-name" style="color: white;" v-bind:id="'name-emoji-' + index">{{emoji.title}}</p>
     </div>
   </div>
 </template>
@@ -32,26 +31,24 @@ export default {
         setTimeout(() => {
           this.scroll();
           scrolling = false;
-        }, 500);
+        }, 300);
       }
     });
   },
   mounted() {
     setTimeout(() => {
+      this.scroll();
       this.hoverEmoji();
-
-      //console.log(this.isScrolledIntoView($("#name50")));
-      //console.log(this.isScrolledIntoView($(".emoji")[49]));
     }, 1000);
   },
   methods: {
     hoverEmoji() {
       $(".emoji").mouseover(function() {
-        let id = "#" + "name" + $(this).attr("id");
+        let id = "#" + "name-" + $(this).attr("id");
         $(id).css({ color: "#2c3e50" });
       });
       $(".emoji").mouseleave(function() {
-        let id = "#" + "name" + $(this).attr("id");
+        let id = "#" + "name-" + $(this).attr("id");
         $(id).css({ color: "white" });
       });
     },
@@ -88,6 +85,7 @@ export default {
       while (!(first != -1 && last != -1)) {
         let id = "#emoji-" + i;
         if (first == -1 && this.isScrolledIntoView($(id))) first = i;
+
         if (
           first != -1 &&
           (i == emojiAmount || !this.isScrolledIntoView($(id)))
@@ -95,8 +93,25 @@ export default {
           last = i - 1;
         i++;
       }
+      this.changeGroups(first, last);
+    },
 
-      console.log("first: " + first + "   last: " + last);
+    changeGroups(first, last) {
+      $("#groupH2").text(this.emojis[first].group);
+
+      let subgroup = this.emojis[first].subgroup;
+      subgroup = subgroup[0].toUpperCase() + subgroup.slice(1);
+      $("#subGroupH2").text(subgroup);
+
+      if (this.emojis[first].group != this.emojis[last].group)
+        $("#groupH2").text(
+          this.emojis[first].group + " - " + this.emojis[last].group
+        );
+
+      if (this.emojis[first].subgroup != this.emojis[last].subgroup)
+        $("#subGroupH2").text(
+          this.emojis[first].subgroup + " - " + this.emojis[last].subgroup
+        );
     }
   }
 };
