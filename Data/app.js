@@ -1,11 +1,16 @@
 let db = require('./dbQueries');
 
 let readFile = require('readline').createInterface({
-    input: require('fs').createReadStream('emojis.txt')
+    input: require('fs').createReadStream('./data/emojis.txt')
 })
 
 let group = '';
 let subgroup = '';
+
+let emojis = []
+let id = 0;
+
+
 
 readFile.on('line', (line) => {
     line = line.split('\t')
@@ -46,6 +51,19 @@ readFile.on('line', (line) => {
         title = title.replace('  ', ' ')
     }
 
-    let emojiQuery = `INSERT INTO emojis (emoji, title, subgroup, majorgroup) VALUES('${hexHtml}', '${title}', '${subgroup}', '${group}')`
-    db.query(emojiQuery)
+    /* if (hexHtml.length > 1) {
+        let emojiQuery = `INSERT INTO emojis (emoji, title, subgroup, majorgroup) VALUES('${hexHtml}', '${title}', '${subgroup}', '${group}')`
+        db.query(emojiQuery)
+    } */
+
+    if (hexHtml.length > 1)
+        emojis.push({ id: id++, hex: hexHtml, title, subgroup, group })
 })
+
+
+
+setTimeout(() => {
+    require('fs').writeFile('./server/emojis.json', JSON.stringify(emojis), (err) => {
+        if (err) console.log(err)
+    })
+}, 5000); 
