@@ -49,6 +49,8 @@ readFile.on('line', (line) => {
             title = title.replace(',', ' ')
         title = title.replace('U S', 'U.S')
         title = title.replace('  ', ' ')
+        if (title.charAt(title.length - 1) == '"')
+            title = title.substring(0, title.length - 1)
     }
 
     /* if (hexHtml.length > 1) {
