@@ -1,14 +1,23 @@
 <template>
   <div class="container">
-    <h1>Click to copy</h1>
-    <div id="search">
-      <input type="text" name="search" autocomplete="off" />
+    <div id="upper">
+      <h1>Click to copy</h1>
+      <div id="search">
+        <input type="text" name="search" autocomplete="off" />
+      </div>
     </div>
+
     <div id="emojis">
+      <div id="preview">
+        <div id="preview-emoji"></div>
+        <span></span>
+      </div>
+
       <div id="groups">
         <h2 id="groupH2"></h2>
         <h2 id="subGroupH2"></h2>
       </div>
+
       <Emojis />
     </div>
   </div>
@@ -35,7 +44,7 @@ export default {
   flex-direction: column;
 
   #emojis {
-    margin-top: 40px;
+    margin-top: 80px;
 
     width: 80vw;
     height: 70vh;
@@ -53,6 +62,24 @@ export default {
         margin: 0px;
       }
       background: grey;
+    }
+
+    #preview {
+      position: absolute;
+
+      width: 400px;
+      height: 200px;
+
+      top: 20px;
+
+      #preview-emoji {
+        height: 150px;
+        width: 150px;
+
+        position: relative;
+        left: 125px;
+        font-size: 100px;
+      }
     }
   }
 }

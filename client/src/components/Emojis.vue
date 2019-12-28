@@ -2,7 +2,6 @@
   <div class="container" id="emoji-list">
     <div v-for="(emoji, index) in emojis">
       <p v-html="emoji.hex" class="emoji" v-bind:id="'emoji-' + index"></p>
-      <p class="emoji-name" style="color: white;" v-bind:id="'name-emoji-' + index">{{emoji.title}}</p>
     </div>
   </div>
 </template>
@@ -43,13 +42,22 @@ export default {
   },
   methods: {
     hoverEmoji() {
+      let emojiArr = this.emojis;
+
       $(".emoji").mouseover(function() {
-        let id = "#" + "name-" + $(this).attr("id");
-        $(id).css({ color: "#2c3e50" });
+        let id = $(this)
+          .attr("id")
+          .split("-")[1];
+        $("#preview-emoji").html(emojiArr[id].hex);
+
+        let title =
+          emojiArr[id].title.charAt(0).toUpperCase() +
+          emojiArr[id].title.slice(1);
+        $("#preview span").text(title);
       });
       $(".emoji").mouseleave(function() {
-        let id = "#" + "name-" + $(this).attr("id");
-        $(id).css({ color: "white" });
+        $("#preview-emoji").html("");
+        $("#preview span").text("");
       });
     },
 
