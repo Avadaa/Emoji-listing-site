@@ -107,9 +107,12 @@ export default {
     changeGroups(first, last) {
       $("#groupH2").text(this.emojis[first].group);
 
-      let subgroup = this.emojis[first].subgroup;
-      subgroup = subgroup[0].toUpperCase() + subgroup.slice(1);
-      $("#subGroupH2").text(subgroup);
+      let subgroupF = this.emojis[first].subgroup;
+      subgroupF = subgroupF[0].toUpperCase() + subgroupF.slice(1);
+
+      let subgroupL = this.emojis[last].subgroup;
+      subgroupL = subgroupL[0].toUpperCase() + subgroupL.slice(1);
+      $("#subGroupH2").text(subgroupF);
 
       if (this.emojis[first].group != this.emojis[last].group)
         $("#groupH2").text(
@@ -117,9 +120,7 @@ export default {
         );
 
       if (this.emojis[first].subgroup != this.emojis[last].subgroup)
-        $("#subGroupH2").text(
-          this.emojis[first].subgroup + " - " + this.emojis[last].subgroup
-        );
+        $("#subGroupH2").text(subgroupF + " - " + subgroupL);
     }
   }
 };

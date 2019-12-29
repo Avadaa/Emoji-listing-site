@@ -60,8 +60,10 @@ export default {
       top: 0;
       h2 {
         margin: 0px;
+
+        width: 40vw;
       }
-      background: grey;
+      background: white;
     }
 
     #preview {
@@ -71,6 +73,10 @@ export default {
       height: 200px;
 
       top: 20px;
+
+      span {
+        font-size: 20px;
+      }
 
       #preview-emoji {
         height: 150px;
