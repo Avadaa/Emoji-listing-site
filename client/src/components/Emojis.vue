@@ -38,6 +38,28 @@ export default {
     setTimeout(() => {
       this.scroll();
       this.hoverEmoji();
+
+      let emojiArr = this.emojis;
+      let dis = this;
+      $("input").on("keyup", function() {
+        let value = $(this)
+          .val()
+          .toLowerCase();
+
+        $("#emoji-list div").filter(function() {
+          $(this).toggle(
+            emojiArr[
+              $(this)
+                .children(0)
+                .attr("id")
+                .split("-")[1]
+            ].title
+              .toLowerCase()
+              .indexOf(value) > -1
+          );
+        });
+        dis.scroll();
+      });
     }, 1000);
   },
   methods: {
@@ -85,22 +107,28 @@ export default {
       let first = -1;
       let last = -1;
 
-      let i =
-        emojiAmount * percentScrolled - 70 >= 0
-          ? Math.floor(emojiAmount * percentScrolled - 70)
-          : 0;
+      let i = 0;
 
-      while (!(first != -1 && last != -1)) {
+      while (first == -1) {
         let id = "#emoji-" + i;
-        if (first == -1 && this.isScrolledIntoView($(id))) first = i;
-
-        if (
-          first != -1 &&
-          (i == emojiAmount || !this.isScrolledIntoView($(id)))
-        )
-          last = i - 1;
+        if (this.isScrolledIntoView($(id))) {
+          first = i;
+          break;
+        }
         i++;
       }
+
+      i = emojiAmount - 1;
+
+      while (last == -1) {
+        let id = "#emoji-" + i;
+        if (this.isScrolledIntoView($(id))) {
+          last = i;
+          break;
+        }
+        i--;
+      }
+
       this.changeGroups(first, last);
     },
 

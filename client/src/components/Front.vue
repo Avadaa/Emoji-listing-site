@@ -1,16 +1,14 @@
 <template>
   <div class="container">
-    <div id="upper">
-      <h1>Click to copy</h1>
-      <div id="search">
-        <input type="text" name="search" autocomplete="off" />
-      </div>
-    </div>
-
     <div id="emojis">
-      <div id="preview">
-        <div id="preview-emoji"></div>
-        <span></span>
+      <div id="upper">
+        <div id="preview">
+          <div id="preview-emoji"></div>
+          <span></span>
+        </div>
+        <div id="search">
+          <input type="text" name="search" autocomplete="off" placeholder="Search" />
+        </div>
       </div>
 
       <div id="groups">
@@ -44,11 +42,10 @@ export default {
   flex-direction: column;
 
   #emojis {
-    margin-top: 80px;
+    margin-top: 165px;
 
     width: 80vw;
     height: 70vh;
-    border: 2px solid grey;
 
     overflow-y: auto;
 
@@ -66,25 +63,52 @@ export default {
       background: white;
     }
 
-    #preview {
+    #upper {
       position: absolute;
-
-      width: 400px;
-      height: 200px;
-
       top: 20px;
+      width: 80vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
-      span {
-        font-size: 20px;
+      #search {
+        position: relative;
+        top: 150px;
+        height: 40px;
+
+        font-size: 2em;
+        color: rgb(92, 92, 92);
+        input {
+          border: 0;
+          width: 250px;
+          font-size: 30px;
+
+          &:focus {
+            outline: 0;
+          }
+
+          &::-webkit-input-placeholder {
+            padding-left: 150px;
+          }
+        }
       }
 
-      #preview-emoji {
-        height: 150px;
-        width: 150px;
+      #preview {
+        width: 400px;
+        height: 200px;
 
-        position: relative;
-        left: 125px;
-        font-size: 100px;
+        span {
+          font-size: 20px;
+        }
+
+        #preview-emoji {
+          height: 150px;
+          width: 150px;
+
+          position: relative;
+          left: 125px;
+          font-size: 100px;
+        }
       }
     }
   }
