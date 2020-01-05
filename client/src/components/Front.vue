@@ -59,6 +59,8 @@ export default {
         margin: 0px;
 
         width: 40vw;
+        color: rgb(0, 135, 189);
+        font-weight: 100;
       }
       background: white;
     }
@@ -77,11 +79,12 @@ export default {
         height: 40px;
 
         font-size: 2em;
-        color: rgb(92, 92, 92);
+        color: rgb(90, 90, 90);
         input {
           border: 0;
           width: 250px;
           font-size: 30px;
+          color: rgb(90, 90, 90);
 
           &:focus {
             outline: 0;
