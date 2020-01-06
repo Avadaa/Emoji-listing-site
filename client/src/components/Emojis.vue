@@ -54,6 +54,16 @@ export default {
           .val()
           .toLowerCase();
 
+        value == ""
+          ? $("#search input").css(
+              "border-bottom",
+              "1px solid rgba(90, 90, 90, 0.4)"
+            )
+          : $("#search input").css(
+              "border-bottom",
+              "2px solid rgb(0, 135, 189)"
+            );
+
         $("#emoji-list div:not(.copied)").filter(function() {
           $(this).toggle(
             emojiArr[
@@ -118,22 +128,26 @@ export default {
       let i = 0;
 
       while (first == -1) {
-        let id = "#emoji-" + i;
-        if (this.isScrolledIntoView($(id))) {
-          first = i;
-          break;
-        }
+        if (i <= this.emojis.length - 1) {
+          let id = "#emoji-" + i;
+          if (this.isScrolledIntoView($(id))) {
+            first = i;
+            break;
+          }
+        } else break;
         i++;
       }
 
       i = emojiAmount - 1;
 
       while (last == -1) {
-        let id = "#emoji-" + i;
-        if (this.isScrolledIntoView($(id))) {
-          last = i;
-          break;
-        }
+        if (i >= 0) {
+          let id = "#emoji-" + i;
+          if (this.isScrolledIntoView($(id))) {
+            last = i;
+            break;
+          }
+        } else break;
         i--;
       }
 
@@ -141,22 +155,27 @@ export default {
     },
 
     changeGroups(first, last) {
-      $("#groupH2").text(this.emojis[first].group);
+      if (first == -1 || last == -1) {
+        $("#groupH2").text("No emojis found");
+        $("#subGroupH2").text("");
+      } else {
+        $("#groupH2").text(this.emojis[first].group);
 
-      let subgroupF = this.emojis[first].subgroup;
-      subgroupF = subgroupF[0].toUpperCase() + subgroupF.slice(1);
+        let subgroupF = this.emojis[first].subgroup;
+        subgroupF = subgroupF[0].toUpperCase() + subgroupF.slice(1);
 
-      let subgroupL = this.emojis[last].subgroup;
-      subgroupL = subgroupL[0].toUpperCase() + subgroupL.slice(1);
-      $("#subGroupH2").text(subgroupF);
+        let subgroupL = this.emojis[last].subgroup;
+        subgroupL = subgroupL[0].toUpperCase() + subgroupL.slice(1);
+        $("#subGroupH2").text(subgroupF);
 
-      if (this.emojis[first].group != this.emojis[last].group)
-        $("#groupH2").text(
-          this.emojis[first].group + " - " + this.emojis[last].group
-        );
+        if (this.emojis[first].group != this.emojis[last].group)
+          $("#groupH2").text(
+            this.emojis[first].group + " - " + this.emojis[last].group
+          );
 
-      if (this.emojis[first].subgroup != this.emojis[last].subgroup)
-        $("#subGroupH2").text(subgroupF + " - " + subgroupL);
+        if (this.emojis[first].subgroup != this.emojis[last].subgroup)
+          $("#subGroupH2").text(subgroupF + " - " + subgroupL);
+      }
     },
 
     copy(e, id) {

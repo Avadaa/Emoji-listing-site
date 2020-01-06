@@ -86,6 +86,8 @@ export default {
           font-size: 30px;
           color: rgb(90, 90, 90);
 
+          border-bottom: 1px solid rgba(90, 90, 90, 0.4);
+
           &:focus {
             outline: 0;
           }
