@@ -54,11 +54,11 @@ export default {
           .val()
           .toLowerCase();
 
-        $("#emoji-list div").filter(function() {
+        $("#emoji-list div:not(.copied)").filter(function() {
           $(this).toggle(
             emojiArr[
               $(this)
-                .children(0)
+                .children()
                 .attr("id")
                 .split("-")[1]
             ].title
