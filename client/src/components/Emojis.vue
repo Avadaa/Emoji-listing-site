@@ -193,7 +193,6 @@ export default {
   }
 
   .emoji {
-    position: relative;
     margin: 15px;
     padding: 5px;
 
