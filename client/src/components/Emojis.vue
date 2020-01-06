@@ -21,7 +21,7 @@ export default {
     this.emojis = emojis.data;
 
     // Scrolling the emoji-list
-    // After the scrolling has started, wait 500ms and fire the scroll() -function
+    // After the scrolling has started, wait 300ms and fire the scroll() -function
     let scrolling = false;
     $("#emojis").scroll(() => {
       if (!scrolling) {
