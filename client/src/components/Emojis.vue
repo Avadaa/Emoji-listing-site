@@ -1,7 +1,15 @@
 <template>
   <div class="container" id="emoji-list">
     <div v-for="(emoji, index) in emojis">
-      <p v-html="emoji.hex" class="emoji" v-bind:id="'emoji-' + index" v-on:click="copy(emoji.hex)"></p>
+      <p
+        v-html="emoji.hex"
+        class="emoji"
+        v-bind:id="'emoji-' + index"
+        v-on:click="copy(emoji.hex, index)"
+      ></p>
+      <div class="copied">
+        <span v-bind:id="index + '-copied'"></span>
+      </div>
     </div>
   </div>
 </template>
@@ -151,7 +159,7 @@ export default {
         $("#subGroupH2").text(subgroupF + " - " + subgroupL);
     },
 
-    copy(e) {
+    copy(e, id) {
       let input = document.createElement("input");
       document.body.appendChild(input);
 
@@ -164,6 +172,11 @@ export default {
       document.execCommand("copy", false);
       input.remove();
       s.remove();
+
+      $(`#${id}-copied`).text("Copied!");
+      $(`#${id}-copied`)
+        .fadeIn(1000)
+        .fadeOut(1000);
     }
   }
 };
@@ -175,7 +188,12 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
 
+  .copied {
+    height: 20px;
+  }
+
   .emoji {
+    position: relative;
     margin: 15px;
     padding: 5px;
 
