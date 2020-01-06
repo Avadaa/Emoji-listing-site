@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="emoji-list">
     <div v-for="(emoji, index) in emojis">
-      <p v-html="emoji.hex" class="emoji" v-bind:id="'emoji-' + index"></p>
+      <p v-html="emoji.hex" class="emoji" v-bind:id="'emoji-' + index" v-on:click="copy(emoji.hex)"></p>
     </div>
   </div>
 </template>
@@ -149,6 +149,21 @@ export default {
 
       if (this.emojis[first].subgroup != this.emojis[last].subgroup)
         $("#subGroupH2").text(subgroupF + " - " + subgroupL);
+    },
+
+    copy(e) {
+      let input = document.createElement("input");
+      document.body.appendChild(input);
+
+      let s = document.createElement("span");
+      document.body.appendChild(s);
+      s.innerHTML = e;
+
+      input.value = s.innerHTML;
+      input.select();
+      document.execCommand("copy", false);
+      input.remove();
+      s.remove();
     }
   }
 };
