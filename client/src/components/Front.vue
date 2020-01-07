@@ -2,7 +2,8 @@
   <div class="container">
     <div id="upper">
       <div id="title-div">
-        <h1>🖱️📲Click to copy📝</h1>
+        <h1 id="title-normal">🖱️📲Click to copy📝</h1>
+        <h1 id="title-mobile">Click to copy</h1>
       </div>
       <div id="preview">
         <div id="preview-emoji"></div>
@@ -165,6 +166,9 @@ export default {
         font-size: 3em;
         user-select: none;
       }
+      #title-mobile {
+        display: none;
+      }
     }
     #preview {
       width: 400px;
@@ -207,7 +211,7 @@ export default {
 
 @media screen and (max-width: 1260px) {
   #upper {
-    height: 400px;
+    height: 250px;
     justify-content: center !important;
 
     #preview {
@@ -220,19 +224,6 @@ export default {
     }
   }
 
-  #emojis {
-    position: relative;
-    top: -150px !important;
-  }
-
-  #search {
-    top: -150px;
-  }
-
-  #side-panel {
-    top: -150px;
-  }
-
   h2:first-child {
     border-right: none;
   }
@@ -240,33 +231,25 @@ export default {
 
 @media screen and (max-width: 600px) {
   #upper {
-    height: 400px;
+    height: 60px;
     justify-content: center !important;
 
     #preview {
       display: none;
     }
-
-    #title-div {
-      top: 0 !important;
-    }
-  }
-
-  #emojis {
-    position: relative;
-    top: -330px !important;
-  }
-
-  #search {
-    top: -330px;
-  }
-
-  #side-panel {
-    top: -330px;
   }
 
   h2:first-child {
     border-right: 3px solid rgb(166, 230, 255) !important;
+  }
+
+  #title-normal {
+    display: none;
+  }
+  #title-mobile {
+    display: inline !important;
+    position: relative;
+    top: 35px;
   }
 }
 </style>
