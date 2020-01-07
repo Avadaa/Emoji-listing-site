@@ -19,19 +19,13 @@
           <h2 id="subGroupH2"></h2>
         </div>
 
-        <Emojis />
+        <Emojis :child="child" ref="form" />
       </div>
       <div id="side-panel">
-        <div id="panel-smiley">😀</div>
-        <div id="panel-body">👷</div>
-        <div id="panel-animal">🐶</div>
-        <div id="panel-flower">🌻</div>
-        <div id="panel-food">🍕</div>
-        <div id="panel-place">🏘️</div>
-        <div id="panel-weather">☁️</div>
-        <div id="panel-activity">♟️</div>
-        <div id="panel-object">▶️</div>
-        <div id="panel-flag">🏴</div>
+        <div v-for="(emoji, index) in sidebar">
+          <div v-html="emoji[2]" v-on:click="scroll(index)"></div>
+        </div>
+        <div id="side-panel-clear" v-on:click="scroll(sidebarLastIndex)">Clear</div>
       </div>
     </div>
   </div>
@@ -39,14 +33,53 @@
 
 <script>
 import Emojis from "./Emojis";
+import Api from "../services/EmojiService";
 
 export default {
   name: "Front",
   components: { Emojis },
   data() {
     return {
-      msg: "dd"
+      sidebar: [],
+      sidebarLastIndex: 0,
+      child: {}
     };
+  },
+  async created() {
+    let sidebar = await Api.getSidebar();
+    this.sidebar = sidebar.data;
+    this.sidebarLastIndex = sidebar.data.length - 1;
+  },
+  methods: {
+    scroll(index) {
+      $("input").val("");
+      $("#search input").css(
+        "border-bottom",
+        "1px solid rgba(90, 90, 90, 0.4)"
+      );
+
+      let sidebar = this.sidebar;
+      let EmojiChild = this.$refs.form;
+
+      $("#emoji-list div:not(.copied)").filter(function() {
+        $(this).toggle(
+          $(this)
+            .children()
+            .attr("id")
+            .split("-")[1] >= sidebar[index][0] &&
+            $(this)
+              .children()
+              .attr("id")
+              .split("-")[1] <= sidebar[index][1]
+        );
+      });
+      $("#emojis").scrollTop(0);
+      EmojiChild.scroll();
+
+      if (index != this.sidebarLastIndex)
+        $("#side-panel-clear").css("color", "#2c3e50");
+      else $("#side-panel-clear").css("color", "white");
+    }
   }
 };
 </script>
@@ -158,6 +191,12 @@ export default {
     user-select: none;
 
     font-size: 2em;
+
+    #side-panel-clear {
+      font-size: 0.55em;
+      margin-top: 15px;
+      color: white;
+    }
   }
 }
 

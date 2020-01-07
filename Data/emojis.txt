@@ -21,7 +21,6 @@
 1F929	🤩 E5.0 star-struck
 1F618	😘 E2.0 face blowing a kiss
 1F617	😗 E2.0 kissing face
-263A FE0F	☺️ E2.0 smiling face
 	
 1F61A	😚 E2.0 kissing face with closed eyes
 1F619	😙 E2.0 kissing face with smiling eyes
@@ -537,48 +536,24 @@
 1F469 1F3FD 200D 1F9B0	"👩🏽‍🦰 E11.0 woman: medium skin tone, red hair"
 1F469 1F3FE 200D 1F9B0	"👩🏾‍🦰 E11.0 woman: medium-dark skin tone, red hair"
 1F469 1F3FF 200D 1F9B0	"👩🏿‍🦰 E11.0 woman: dark skin tone, red hair"
-1F9D1 200D 1F9B0	🧑‍🦰 E12.1 person: red hair
-1F9D1 1F3FB 200D 1F9B0	"🧑🏻‍🦰 E12.1 person: light skin tone, red hair"
-1F9D1 1F3FC 200D 1F9B0	"🧑🏼‍🦰 E12.1 person: medium-light skin tone, red hair"
-1F9D1 1F3FD 200D 1F9B0	"🧑🏽‍🦰 E12.1 person: medium skin tone, red hair"
-1F9D1 1F3FE 200D 1F9B0	"🧑🏾‍🦰 E12.1 person: medium-dark skin tone, red hair"
-1F9D1 1F3FF 200D 1F9B0	"🧑🏿‍🦰 E12.1 person: dark skin tone, red hair"
 1F469 200D 1F9B1	👩‍🦱 E11.0 woman: curly hair
 1F469 1F3FB 200D 1F9B1	"👩🏻‍🦱 E11.0 woman: light skin tone, curly hair"
 1F469 1F3FC 200D 1F9B1	"👩🏼‍🦱 E11.0 woman: medium-light skin tone, curly hair"
 1F469 1F3FD 200D 1F9B1	"👩🏽‍🦱 E11.0 woman: medium skin tone, curly hair"
 1F469 1F3FE 200D 1F9B1	"👩🏾‍🦱 E11.0 woman: medium-dark skin tone, curly hair"
 1F469 1F3FF 200D 1F9B1	"👩🏿‍🦱 E11.0 woman: dark skin tone, curly hair"
-1F9D1 200D 1F9B1	🧑‍🦱 E12.1 person: curly hair
-1F9D1 1F3FB 200D 1F9B1	"🧑🏻‍🦱 E12.1 person: light skin tone, curly hair"
-1F9D1 1F3FC 200D 1F9B1	"🧑🏼‍🦱 E12.1 person: medium-light skin tone, curly hair"
-1F9D1 1F3FD 200D 1F9B1	"🧑🏽‍🦱 E12.1 person: medium skin tone, curly hair"
-1F9D1 1F3FE 200D 1F9B1	"🧑🏾‍🦱 E12.1 person: medium-dark skin tone, curly hair"
-1F9D1 1F3FF 200D 1F9B1	"🧑🏿‍🦱 E12.1 person: dark skin tone, curly hair"
 1F469 200D 1F9B3	👩‍🦳 E11.0 woman: white hair
 1F469 1F3FB 200D 1F9B3	"👩🏻‍🦳 E11.0 woman: light skin tone, white hair"
 1F469 1F3FC 200D 1F9B3	"👩🏼‍🦳 E11.0 woman: medium-light skin tone, white hair"
 1F469 1F3FD 200D 1F9B3	"👩🏽‍🦳 E11.0 woman: medium skin tone, white hair"
 1F469 1F3FE 200D 1F9B3	"👩🏾‍🦳 E11.0 woman: medium-dark skin tone, white hair"
 1F469 1F3FF 200D 1F9B3	"👩🏿‍🦳 E11.0 woman: dark skin tone, white hair"
-1F9D1 200D 1F9B3	🧑‍🦳 E12.1 person: white hair
-1F9D1 1F3FB 200D 1F9B3	"🧑🏻‍🦳 E12.1 person: light skin tone, white hair"
-1F9D1 1F3FC 200D 1F9B3	"🧑🏼‍🦳 E12.1 person: medium-light skin tone, white hair"
-1F9D1 1F3FD 200D 1F9B3	"🧑🏽‍🦳 E12.1 person: medium skin tone, white hair"
-1F9D1 1F3FE 200D 1F9B3	"🧑🏾‍🦳 E12.1 person: medium-dark skin tone, white hair"
-1F9D1 1F3FF 200D 1F9B3	"🧑🏿‍🦳 E12.1 person: dark skin tone, white hair"
 1F469 200D 1F9B2	👩‍🦲 E11.0 woman: bald
 1F469 1F3FB 200D 1F9B2	"👩🏻‍🦲 E11.0 woman: light skin tone, bald"
 1F469 1F3FC 200D 1F9B2	"👩🏼‍🦲 E11.0 woman: medium-light skin tone, bald"
 1F469 1F3FD 200D 1F9B2	"👩🏽‍🦲 E11.0 woman: medium skin tone, bald"
 1F469 1F3FE 200D 1F9B2	"👩🏾‍🦲 E11.0 woman: medium-dark skin tone, bald"
 1F469 1F3FF 200D 1F9B2	"👩🏿‍🦲 E11.0 woman: dark skin tone, bald"
-1F9D1 200D 1F9B2	🧑‍🦲 E12.1 person: bald
-1F9D1 1F3FB 200D 1F9B2	"🧑🏻‍🦲 E12.1 person: light skin tone, bald"
-1F9D1 1F3FC 200D 1F9B2	"🧑🏼‍🦲 E12.1 person: medium-light skin tone, bald"
-1F9D1 1F3FD 200D 1F9B2	"🧑🏽‍🦲 E12.1 person: medium skin tone, bald"
-1F9D1 1F3FE 200D 1F9B2	"🧑🏾‍🦲 E12.1 person: medium-dark skin tone, bald"
-1F9D1 1F3FF 200D 1F9B2	"🧑🏿‍🦲 E12.1 person: dark skin tone, bald"
 1F471 200D 2640 FE0F	👱‍♀️ E4.0 woman: blond hair
 	
 1F471 1F3FB 200D 2640 FE0F	"👱🏻‍♀️ E4.0 woman: light skin tone, blond hair"
@@ -925,17 +900,7 @@
 	
 	
 # subgroup: person-role	
-1F9D1 200D 2695 FE0F	🧑‍⚕️ E12.1 health worker
 	
-1F9D1 1F3FB 200D 2695 FE0F	🧑🏻‍⚕️ E12.1 health worker: light skin tone
-	
-1F9D1 1F3FC 200D 2695 FE0F	🧑🏼‍⚕️ E12.1 health worker: medium-light skin tone
-	
-1F9D1 1F3FD 200D 2695 FE0F	🧑🏽‍⚕️ E12.1 health worker: medium skin tone
-	
-1F9D1 1F3FE 200D 2695 FE0F	🧑🏾‍⚕️ E12.1 health worker: medium-dark skin tone
-	
-1F9D1 1F3FF 200D 2695 FE0F	🧑🏿‍⚕️ E12.1 health worker: dark skin tone
 	
 1F468 200D 2695 FE0F	👨‍⚕️ E4.0 man health worker
 	
@@ -961,12 +926,6 @@
 	
 1F469 1F3FF 200D 2695 FE0F	👩🏿‍⚕️ E4.0 woman health worker: dark skin tone
 	
-1F9D1 200D 1F393	🧑‍🎓 E12.1 student
-1F9D1 1F3FB 200D 1F393	🧑🏻‍🎓 E12.1 student: light skin tone
-1F9D1 1F3FC 200D 1F393	🧑🏼‍🎓 E12.1 student: medium-light skin tone
-1F9D1 1F3FD 200D 1F393	🧑🏽‍🎓 E12.1 student: medium skin tone
-1F9D1 1F3FE 200D 1F393	🧑🏾‍🎓 E12.1 student: medium-dark skin tone
-1F9D1 1F3FF 200D 1F393	🧑🏿‍🎓 E12.1 student: dark skin tone
 1F468 200D 1F393	👨‍🎓 E4.0 man student
 1F468 1F3FB 200D 1F393	👨🏻‍🎓 E4.0 man student: light skin tone
 1F468 1F3FC 200D 1F393	👨🏼‍🎓 E4.0 man student: medium-light skin tone
@@ -979,12 +938,6 @@
 1F469 1F3FD 200D 1F393	👩🏽‍🎓 E4.0 woman student: medium skin tone
 1F469 1F3FE 200D 1F393	👩🏾‍🎓 E4.0 woman student: medium-dark skin tone
 1F469 1F3FF 200D 1F393	👩🏿‍🎓 E4.0 woman student: dark skin tone
-1F9D1 200D 1F3EB	🧑‍🏫 E12.1 teacher
-1F9D1 1F3FB 200D 1F3EB	🧑🏻‍🏫 E12.1 teacher: light skin tone
-1F9D1 1F3FC 200D 1F3EB	🧑🏼‍🏫 E12.1 teacher: medium-light skin tone
-1F9D1 1F3FD 200D 1F3EB	🧑🏽‍🏫 E12.1 teacher: medium skin tone
-1F9D1 1F3FE 200D 1F3EB	🧑🏾‍🏫 E12.1 teacher: medium-dark skin tone
-1F9D1 1F3FF 200D 1F3EB	🧑🏿‍🏫 E12.1 teacher: dark skin tone
 1F468 200D 1F3EB	👨‍🏫 E4.0 man teacher
 1F468 1F3FB 200D 1F3EB	👨🏻‍🏫 E4.0 man teacher: light skin tone
 1F468 1F3FC 200D 1F3EB	👨🏼‍🏫 E4.0 man teacher: medium-light skin tone
@@ -997,17 +950,6 @@
 1F469 1F3FD 200D 1F3EB	👩🏽‍🏫 E4.0 woman teacher: medium skin tone
 1F469 1F3FE 200D 1F3EB	👩🏾‍🏫 E4.0 woman teacher: medium-dark skin tone
 1F469 1F3FF 200D 1F3EB	👩🏿‍🏫 E4.0 woman teacher: dark skin tone
-1F9D1 200D 2696 FE0F	🧑‍⚖️ E12.1 judge
-	
-1F9D1 1F3FB 200D 2696 FE0F	🧑🏻‍⚖️ E12.1 judge: light skin tone
-	
-1F9D1 1F3FC 200D 2696 FE0F	🧑🏼‍⚖️ E12.1 judge: medium-light skin tone
-	
-1F9D1 1F3FD 200D 2696 FE0F	🧑🏽‍⚖️ E12.1 judge: medium skin tone
-	
-1F9D1 1F3FE 200D 2696 FE0F	🧑🏾‍⚖️ E12.1 judge: medium-dark skin tone
-	
-1F9D1 1F3FF 200D 2696 FE0F	🧑🏿‍⚖️ E12.1 judge: dark skin tone
 	
 1F468 200D 2696 FE0F	👨‍⚖️ E4.0 man judge
 	
@@ -1033,12 +975,6 @@
 	
 1F469 1F3FF 200D 2696 FE0F	👩🏿‍⚖️ E4.0 woman judge: dark skin tone
 	
-1F9D1 200D 1F33E	🧑‍🌾 E12.1 farmer
-1F9D1 1F3FB 200D 1F33E	🧑🏻‍🌾 E12.1 farmer: light skin tone
-1F9D1 1F3FC 200D 1F33E	🧑🏼‍🌾 E12.1 farmer: medium-light skin tone
-1F9D1 1F3FD 200D 1F33E	🧑🏽‍🌾 E12.1 farmer: medium skin tone
-1F9D1 1F3FE 200D 1F33E	🧑🏾‍🌾 E12.1 farmer: medium-dark skin tone
-1F9D1 1F3FF 200D 1F33E	🧑🏿‍🌾 E12.1 farmer: dark skin tone
 1F468 200D 1F33E	👨‍🌾 E4.0 man farmer
 1F468 1F3FB 200D 1F33E	👨🏻‍🌾 E4.0 man farmer: light skin tone
 1F468 1F3FC 200D 1F33E	👨🏼‍🌾 E4.0 man farmer: medium-light skin tone
@@ -1051,12 +987,6 @@
 1F469 1F3FD 200D 1F33E	👩🏽‍🌾 E4.0 woman farmer: medium skin tone
 1F469 1F3FE 200D 1F33E	👩🏾‍🌾 E4.0 woman farmer: medium-dark skin tone
 1F469 1F3FF 200D 1F33E	👩🏿‍🌾 E4.0 woman farmer: dark skin tone
-1F9D1 200D 1F373	🧑‍🍳 E12.1 cook
-1F9D1 1F3FB 200D 1F373	🧑🏻‍🍳 E12.1 cook: light skin tone
-1F9D1 1F3FC 200D 1F373	🧑🏼‍🍳 E12.1 cook: medium-light skin tone
-1F9D1 1F3FD 200D 1F373	🧑🏽‍🍳 E12.1 cook: medium skin tone
-1F9D1 1F3FE 200D 1F373	🧑🏾‍🍳 E12.1 cook: medium-dark skin tone
-1F9D1 1F3FF 200D 1F373	🧑🏿‍🍳 E12.1 cook: dark skin tone
 1F468 200D 1F373	👨‍🍳 E4.0 man cook
 1F468 1F3FB 200D 1F373	👨🏻‍🍳 E4.0 man cook: light skin tone
 1F468 1F3FC 200D 1F373	👨🏼‍🍳 E4.0 man cook: medium-light skin tone
@@ -1069,12 +999,6 @@
 1F469 1F3FD 200D 1F373	👩🏽‍🍳 E4.0 woman cook: medium skin tone
 1F469 1F3FE 200D 1F373	👩🏾‍🍳 E4.0 woman cook: medium-dark skin tone
 1F469 1F3FF 200D 1F373	👩🏿‍🍳 E4.0 woman cook: dark skin tone
-1F9D1 200D 1F527	🧑‍🔧 E12.1 mechanic
-1F9D1 1F3FB 200D 1F527	🧑🏻‍🔧 E12.1 mechanic: light skin tone
-1F9D1 1F3FC 200D 1F527	🧑🏼‍🔧 E12.1 mechanic: medium-light skin tone
-1F9D1 1F3FD 200D 1F527	🧑🏽‍🔧 E12.1 mechanic: medium skin tone
-1F9D1 1F3FE 200D 1F527	🧑🏾‍🔧 E12.1 mechanic: medium-dark skin tone
-1F9D1 1F3FF 200D 1F527	🧑🏿‍🔧 E12.1 mechanic: dark skin tone
 1F468 200D 1F527	👨‍🔧 E4.0 man mechanic
 1F468 1F3FB 200D 1F527	👨🏻‍🔧 E4.0 man mechanic: light skin tone
 1F468 1F3FC 200D 1F527	👨🏼‍🔧 E4.0 man mechanic: medium-light skin tone
@@ -1087,12 +1011,6 @@
 1F469 1F3FD 200D 1F527	👩🏽‍🔧 E4.0 woman mechanic: medium skin tone
 1F469 1F3FE 200D 1F527	👩🏾‍🔧 E4.0 woman mechanic: medium-dark skin tone
 1F469 1F3FF 200D 1F527	👩🏿‍🔧 E4.0 woman mechanic: dark skin tone
-1F9D1 200D 1F3ED	🧑‍🏭 E12.1 factory worker
-1F9D1 1F3FB 200D 1F3ED	🧑🏻‍🏭 E12.1 factory worker: light skin tone
-1F9D1 1F3FC 200D 1F3ED	🧑🏼‍🏭 E12.1 factory worker: medium-light skin tone
-1F9D1 1F3FD 200D 1F3ED	🧑🏽‍🏭 E12.1 factory worker: medium skin tone
-1F9D1 1F3FE 200D 1F3ED	🧑🏾‍🏭 E12.1 factory worker: medium-dark skin tone
-1F9D1 1F3FF 200D 1F3ED	🧑🏿‍🏭 E12.1 factory worker: dark skin tone
 1F468 200D 1F3ED	👨‍🏭 E4.0 man factory worker
 1F468 1F3FB 200D 1F3ED	👨🏻‍🏭 E4.0 man factory worker: light skin tone
 1F468 1F3FC 200D 1F3ED	👨🏼‍🏭 E4.0 man factory worker: medium-light skin tone
@@ -1105,12 +1023,6 @@
 1F469 1F3FD 200D 1F3ED	👩🏽‍🏭 E4.0 woman factory worker: medium skin tone
 1F469 1F3FE 200D 1F3ED	👩🏾‍🏭 E4.0 woman factory worker: medium-dark skin tone
 1F469 1F3FF 200D 1F3ED	👩🏿‍🏭 E4.0 woman factory worker: dark skin tone
-1F9D1 200D 1F4BC	🧑‍💼 E12.1 office worker
-1F9D1 1F3FB 200D 1F4BC	🧑🏻‍💼 E12.1 office worker: light skin tone
-1F9D1 1F3FC 200D 1F4BC	🧑🏼‍💼 E12.1 office worker: medium-light skin tone
-1F9D1 1F3FD 200D 1F4BC	🧑🏽‍💼 E12.1 office worker: medium skin tone
-1F9D1 1F3FE 200D 1F4BC	🧑🏾‍💼 E12.1 office worker: medium-dark skin tone
-1F9D1 1F3FF 200D 1F4BC	🧑🏿‍💼 E12.1 office worker: dark skin tone
 1F468 200D 1F4BC	👨‍💼 E4.0 man office worker
 1F468 1F3FB 200D 1F4BC	👨🏻‍💼 E4.0 man office worker: light skin tone
 1F468 1F3FC 200D 1F4BC	👨🏼‍💼 E4.0 man office worker: medium-light skin tone
@@ -1123,12 +1035,6 @@
 1F469 1F3FD 200D 1F4BC	👩🏽‍💼 E4.0 woman office worker: medium skin tone
 1F469 1F3FE 200D 1F4BC	👩🏾‍💼 E4.0 woman office worker: medium-dark skin tone
 1F469 1F3FF 200D 1F4BC	👩🏿‍💼 E4.0 woman office worker: dark skin tone
-1F9D1 200D 1F52C	🧑‍🔬 E12.1 scientist
-1F9D1 1F3FB 200D 1F52C	🧑🏻‍🔬 E12.1 scientist: light skin tone
-1F9D1 1F3FC 200D 1F52C	🧑🏼‍🔬 E12.1 scientist: medium-light skin tone
-1F9D1 1F3FD 200D 1F52C	🧑🏽‍🔬 E12.1 scientist: medium skin tone
-1F9D1 1F3FE 200D 1F52C	🧑🏾‍🔬 E12.1 scientist: medium-dark skin tone
-1F9D1 1F3FF 200D 1F52C	🧑🏿‍🔬 E12.1 scientist: dark skin tone
 1F468 200D 1F52C	👨‍🔬 E4.0 man scientist
 1F468 1F3FB 200D 1F52C	👨🏻‍🔬 E4.0 man scientist: light skin tone
 1F468 1F3FC 200D 1F52C	👨🏼‍🔬 E4.0 man scientist: medium-light skin tone
@@ -1141,12 +1047,6 @@
 1F469 1F3FD 200D 1F52C	👩🏽‍🔬 E4.0 woman scientist: medium skin tone
 1F469 1F3FE 200D 1F52C	👩🏾‍🔬 E4.0 woman scientist: medium-dark skin tone
 1F469 1F3FF 200D 1F52C	👩🏿‍🔬 E4.0 woman scientist: dark skin tone
-1F9D1 200D 1F4BB	🧑‍💻 E12.1 technologist
-1F9D1 1F3FB 200D 1F4BB	🧑🏻‍💻 E12.1 technologist: light skin tone
-1F9D1 1F3FC 200D 1F4BB	🧑🏼‍💻 E12.1 technologist: medium-light skin tone
-1F9D1 1F3FD 200D 1F4BB	🧑🏽‍💻 E12.1 technologist: medium skin tone
-1F9D1 1F3FE 200D 1F4BB	🧑🏾‍💻 E12.1 technologist: medium-dark skin tone
-1F9D1 1F3FF 200D 1F4BB	🧑🏿‍💻 E12.1 technologist: dark skin tone
 1F468 200D 1F4BB	👨‍💻 E4.0 man technologist
 1F468 1F3FB 200D 1F4BB	👨🏻‍💻 E4.0 man technologist: light skin tone
 1F468 1F3FC 200D 1F4BB	👨🏼‍💻 E4.0 man technologist: medium-light skin tone
@@ -1159,12 +1059,6 @@
 1F469 1F3FD 200D 1F4BB	👩🏽‍💻 E4.0 woman technologist: medium skin tone
 1F469 1F3FE 200D 1F4BB	👩🏾‍💻 E4.0 woman technologist: medium-dark skin tone
 1F469 1F3FF 200D 1F4BB	👩🏿‍💻 E4.0 woman technologist: dark skin tone
-1F9D1 200D 1F3A4	🧑‍🎤 E12.1 singer
-1F9D1 1F3FB 200D 1F3A4	🧑🏻‍🎤 E12.1 singer: light skin tone
-1F9D1 1F3FC 200D 1F3A4	🧑🏼‍🎤 E12.1 singer: medium-light skin tone
-1F9D1 1F3FD 200D 1F3A4	🧑🏽‍🎤 E12.1 singer: medium skin tone
-1F9D1 1F3FE 200D 1F3A4	🧑🏾‍🎤 E12.1 singer: medium-dark skin tone
-1F9D1 1F3FF 200D 1F3A4	🧑🏿‍🎤 E12.1 singer: dark skin tone
 1F468 200D 1F3A4	👨‍🎤 E4.0 man singer
 1F468 1F3FB 200D 1F3A4	👨🏻‍🎤 E4.0 man singer: light skin tone
 1F468 1F3FC 200D 1F3A4	👨🏼‍🎤 E4.0 man singer: medium-light skin tone
@@ -1177,12 +1071,6 @@
 1F469 1F3FD 200D 1F3A4	👩🏽‍🎤 E4.0 woman singer: medium skin tone
 1F469 1F3FE 200D 1F3A4	👩🏾‍🎤 E4.0 woman singer: medium-dark skin tone
 1F469 1F3FF 200D 1F3A4	👩🏿‍🎤 E4.0 woman singer: dark skin tone
-1F9D1 200D 1F3A8	🧑‍🎨 E12.1 artist
-1F9D1 1F3FB 200D 1F3A8	🧑🏻‍🎨 E12.1 artist: light skin tone
-1F9D1 1F3FC 200D 1F3A8	🧑🏼‍🎨 E12.1 artist: medium-light skin tone
-1F9D1 1F3FD 200D 1F3A8	🧑🏽‍🎨 E12.1 artist: medium skin tone
-1F9D1 1F3FE 200D 1F3A8	🧑🏾‍🎨 E12.1 artist: medium-dark skin tone
-1F9D1 1F3FF 200D 1F3A8	🧑🏿‍🎨 E12.1 artist: dark skin tone
 1F468 200D 1F3A8	👨‍🎨 E4.0 man artist
 1F468 1F3FB 200D 1F3A8	👨🏻‍🎨 E4.0 man artist: light skin tone
 1F468 1F3FC 200D 1F3A8	👨🏼‍🎨 E4.0 man artist: medium-light skin tone
@@ -1195,17 +1083,6 @@
 1F469 1F3FD 200D 1F3A8	👩🏽‍🎨 E4.0 woman artist: medium skin tone
 1F469 1F3FE 200D 1F3A8	👩🏾‍🎨 E4.0 woman artist: medium-dark skin tone
 1F469 1F3FF 200D 1F3A8	👩🏿‍🎨 E4.0 woman artist: dark skin tone
-1F9D1 200D 2708 FE0F	🧑‍✈️ E12.1 pilot
-	
-1F9D1 1F3FB 200D 2708 FE0F	🧑🏻‍✈️ E12.1 pilot: light skin tone
-	
-1F9D1 1F3FC 200D 2708 FE0F	🧑🏼‍✈️ E12.1 pilot: medium-light skin tone
-	
-1F9D1 1F3FD 200D 2708 FE0F	🧑🏽‍✈️ E12.1 pilot: medium skin tone
-	
-1F9D1 1F3FE 200D 2708 FE0F	🧑🏾‍✈️ E12.1 pilot: medium-dark skin tone
-	
-1F9D1 1F3FF 200D 2708 FE0F	🧑🏿‍✈️ E12.1 pilot: dark skin tone
 	
 1F468 200D 2708 FE0F	👨‍✈️ E4.0 man pilot
 	
@@ -1231,12 +1108,6 @@
 	
 1F469 1F3FF 200D 2708 FE0F	👩🏿‍✈️ E4.0 woman pilot: dark skin tone
 	
-1F9D1 200D 1F680	🧑‍🚀 E12.1 astronaut
-1F9D1 1F3FB 200D 1F680	🧑🏻‍🚀 E12.1 astronaut: light skin tone
-1F9D1 1F3FC 200D 1F680	🧑🏼‍🚀 E12.1 astronaut: medium-light skin tone
-1F9D1 1F3FD 200D 1F680	🧑🏽‍🚀 E12.1 astronaut: medium skin tone
-1F9D1 1F3FE 200D 1F680	🧑🏾‍🚀 E12.1 astronaut: medium-dark skin tone
-1F9D1 1F3FF 200D 1F680	🧑🏿‍🚀 E12.1 astronaut: dark skin tone
 1F468 200D 1F680	👨‍🚀 E4.0 man astronaut
 1F468 1F3FB 200D 1F680	👨🏻‍🚀 E4.0 man astronaut: light skin tone
 1F468 1F3FC 200D 1F680	👨🏼‍🚀 E4.0 man astronaut: medium-light skin tone
@@ -1249,12 +1120,6 @@
 1F469 1F3FD 200D 1F680	👩🏽‍🚀 E4.0 woman astronaut: medium skin tone
 1F469 1F3FE 200D 1F680	👩🏾‍🚀 E4.0 woman astronaut: medium-dark skin tone
 1F469 1F3FF 200D 1F680	👩🏿‍🚀 E4.0 woman astronaut: dark skin tone
-1F9D1 200D 1F692	🧑‍🚒 E12.1 firefighter
-1F9D1 1F3FB 200D 1F692	🧑🏻‍🚒 E12.1 firefighter: light skin tone
-1F9D1 1F3FC 200D 1F692	🧑🏼‍🚒 E12.1 firefighter: medium-light skin tone
-1F9D1 1F3FD 200D 1F692	🧑🏽‍🚒 E12.1 firefighter: medium skin tone
-1F9D1 1F3FE 200D 1F692	🧑🏾‍🚒 E12.1 firefighter: medium-dark skin tone
-1F9D1 1F3FF 200D 1F692	🧑🏿‍🚒 E12.1 firefighter: dark skin tone
 1F468 200D 1F692	👨‍🚒 E4.0 man firefighter
 1F468 1F3FB 200D 1F692	👨🏻‍🚒 E4.0 man firefighter: light skin tone
 1F468 1F3FC 200D 1F692	👨🏼‍🚒 E4.0 man firefighter: medium-light skin tone
@@ -1862,12 +1727,6 @@
 	
 1F9CE 1F3FF 200D 2640 FE0F	🧎🏿‍♀️ E12.1 woman kneeling: dark skin tone
 	
-1F9D1 200D 1F9AF	🧑‍🦯 E12.1 person with probing cane
-1F9D1 1F3FB 200D 1F9AF	🧑🏻‍🦯 E12.1 person with probing cane: light skin tone
-1F9D1 1F3FC 200D 1F9AF	🧑🏼‍🦯 E12.1 person with probing cane: medium-light skin tone
-1F9D1 1F3FD 200D 1F9AF	🧑🏽‍🦯 E12.1 person with probing cane: medium skin tone
-1F9D1 1F3FE 200D 1F9AF	🧑🏾‍🦯 E12.1 person with probing cane: medium-dark skin tone
-1F9D1 1F3FF 200D 1F9AF	🧑🏿‍🦯 E12.1 person with probing cane: dark skin tone
 1F468 200D 1F9AF	👨‍🦯 E12.1 man with probing cane
 1F468 1F3FB 200D 1F9AF	👨🏻‍🦯 E12.1 man with probing cane: light skin tone
 1F468 1F3FC 200D 1F9AF	👨🏼‍🦯 E12.1 man with probing cane: medium-light skin tone
@@ -1880,12 +1739,6 @@
 1F469 1F3FD 200D 1F9AF	👩🏽‍🦯 E12.1 woman with probing cane: medium skin tone
 1F469 1F3FE 200D 1F9AF	👩🏾‍🦯 E12.1 woman with probing cane: medium-dark skin tone
 1F469 1F3FF 200D 1F9AF	👩🏿‍🦯 E12.1 woman with probing cane: dark skin tone
-1F9D1 200D 1F9BC	🧑‍🦼 E12.1 person in motorized wheelchair
-1F9D1 1F3FB 200D 1F9BC	🧑🏻‍🦼 E12.1 person in motorized wheelchair: light skin tone
-1F9D1 1F3FC 200D 1F9BC	🧑🏼‍🦼 E12.1 person in motorized wheelchair: medium-light skin tone
-1F9D1 1F3FD 200D 1F9BC	🧑🏽‍🦼 E12.1 person in motorized wheelchair: medium skin tone
-1F9D1 1F3FE 200D 1F9BC	🧑🏾‍🦼 E12.1 person in motorized wheelchair: medium-dark skin tone
-1F9D1 1F3FF 200D 1F9BC	🧑🏿‍🦼 E12.1 person in motorized wheelchair: dark skin tone
 1F468 200D 1F9BC	👨‍🦼 E12.1 man in motorized wheelchair
 1F468 1F3FB 200D 1F9BC	👨🏻‍🦼 E12.1 man in motorized wheelchair: light skin tone
 1F468 1F3FC 200D 1F9BC	👨🏼‍🦼 E12.1 man in motorized wheelchair: medium-light skin tone
@@ -1898,12 +1751,6 @@
 1F469 1F3FD 200D 1F9BC	👩🏽‍🦼 E12.1 woman in motorized wheelchair: medium skin tone
 1F469 1F3FE 200D 1F9BC	👩🏾‍🦼 E12.1 woman in motorized wheelchair: medium-dark skin tone
 1F469 1F3FF 200D 1F9BC	👩🏿‍🦼 E12.1 woman in motorized wheelchair: dark skin tone
-1F9D1 200D 1F9BD	🧑‍🦽 E12.1 person in manual wheelchair
-1F9D1 1F3FB 200D 1F9BD	🧑🏻‍🦽 E12.1 person in manual wheelchair: light skin tone
-1F9D1 1F3FC 200D 1F9BD	🧑🏼‍🦽 E12.1 person in manual wheelchair: medium-light skin tone
-1F9D1 1F3FD 200D 1F9BD	🧑🏽‍🦽 E12.1 person in manual wheelchair: medium skin tone
-1F9D1 1F3FE 200D 1F9BD	🧑🏾‍🦽 E12.1 person in manual wheelchair: medium-dark skin tone
-1F9D1 1F3FF 200D 1F9BD	🧑🏿‍🦽 E12.1 person in manual wheelchair: dark skin tone
 1F468 200D 1F9BD	👨‍🦽 E12.1 man in manual wheelchair
 1F468 1F3FB 200D 1F9BD	👨🏻‍🦽 E12.1 man in manual wheelchair: light skin tone
 1F468 1F3FC 200D 1F9BD	👨🏼‍🦽 E12.1 man in manual wheelchair: medium-light skin tone
@@ -3310,13 +3157,6 @@
 1F3B2	🎲 E2.0 game die
 1F9E9	🧩 E11.0 puzzle piece
 1F9F8	🧸 E11.0 teddy bear
-2660 FE0F	♠️ E2.0 spade suit
-	
-2665 FE0F	♥️ E2.0 heart suit
-	
-2666 FE0F	♦️ E2.0 diamond suit
-	
-2663 FE0F	♣️ E2.0 club suit
 	
 265F FE0F	♟️ E11.0 chess pawn
 	
@@ -3710,10 +3550,6 @@
 	
 2196 FE0F	↖️ E2.0 up-left arrow
 	
-2195 FE0F	↕️ E2.0 up-down arrow
-	
-2194 FE0F	↔️ E2.0 left-right arrow
-	
 21A9 FE0F	↩️ E2.0 right arrow curving left
 	
 21AA FE0F	↪️ E2.0 left arrow curving right
@@ -3774,7 +3610,6 @@
 1F502	🔂 E2.0 repeat single button
 25B6 FE0F	▶️ E2.0 play button
 	
-2.30E+10	⏩ E2.0 fast-forward button
 23ED FE0F	⏭️ E2.0 next track button
 	
 23EF FE0F	⏯️ E2.0 play or pause button

@@ -1,7 +1,10 @@
 import Api from '@/services/Api'
 
 export default {
-    getEmojis(asd) {
-        return Api().post('api/emojis', asd);
+    getEmojis() {
+        return Api().post('api/emojis');
+    },
+    getSidebar() {
+        return Api().post('api/sidebar');
     }
 }

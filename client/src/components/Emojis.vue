@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import service from "../services/EmojiService";
+import Api from "../services/EmojiService";
 
 export default {
   name: "Emojis",
@@ -25,7 +25,7 @@ export default {
     };
   },
   async created() {
-    let emojis = await service.getEmojis();
+    let emojis = await Api.getEmojis();
     this.emojis = emojis.data;
 
     // Scrolling the emoji-list
@@ -53,6 +53,8 @@ export default {
         let value = $(this)
           .val()
           .toLowerCase();
+
+        if (value == "") $("#side-panel-clear").css("color", "white");
 
         value == ""
           ? $("#search input").css(
