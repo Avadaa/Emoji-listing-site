@@ -142,6 +142,10 @@ export default {
         width: 40vw;
         color: rgb(0, 135, 189);
         font-weight: 100;
+
+        &:first-child {
+          border-right: none;
+        }
       }
     }
   }
@@ -228,6 +232,10 @@ export default {
   #side-panel {
     top: -150px;
   }
+
+  h2:first-child {
+    border-right: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -255,6 +263,10 @@ export default {
 
   #side-panel {
     top: -330px;
+  }
+
+  h2:first-child {
+    border-right: 3px solid rgb(166, 230, 255) !important;
   }
 }
 </style>
