@@ -159,6 +159,7 @@ export default {
       left: 0;
       h1 {
         font-size: 3em;
+        user-select: none;
       }
     }
     #preview {
