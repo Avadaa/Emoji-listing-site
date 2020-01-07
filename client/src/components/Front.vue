@@ -196,6 +196,7 @@ export default {
     height: 440px;
     width: 50px;
     border-radius: 0 10px 10px 0;
+    border-left: 1px dashed rgb(133, 200, 209);
 
     user-select: none;
 
@@ -204,7 +205,7 @@ export default {
     #side-panel-clear {
       font-size: 0.55em;
       margin-top: 15px;
-      //color: white;
+      color: #cdf1ff;
     }
   }
 }

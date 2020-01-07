@@ -82,6 +82,7 @@ export default {
         dis.scroll();
       });
     }, 1000);
+    this.scroll();
   },
   methods: {
     hoverEmoji() {
