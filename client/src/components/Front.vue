@@ -164,6 +164,7 @@ export default {
     #preview {
       width: 400px;
       height: 200px;
+      margin-top: -30px;
 
       span {
         font-size: 20px;

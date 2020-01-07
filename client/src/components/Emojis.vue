@@ -55,6 +55,7 @@ export default {
           .toLowerCase();
 
         if (value == "") $("#side-panel-clear").css("color", "white");
+        else $("#side-panel-clear").css("color", "#2c3e50");
 
         value == ""
           ? $("#search input").css(
