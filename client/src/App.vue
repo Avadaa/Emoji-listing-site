@@ -14,6 +14,33 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  background: rgb(205, 241, 255);
+}
+
+#emoji-list,
+#emojis {
+  background: #cdf1ff;
+}
+
+#side-panel {
+  background: rgb(166, 230, 255);
+}
+
+.emoji {
+  border: 2px solid rgb(205, 241, 255);
+
+  &:hover {
+    border: 2px solid white;
+  }
+}
+#groups {
+  background: rgb(205, 241, 255);
+}
+#search input {
+  background: rgb(205, 241, 255);
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -46,7 +73,7 @@ export default {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(221, 245, 255);
+  background: rgb(166, 230, 255);
 }
 
 ::-webkit-scrollbar-thumb {

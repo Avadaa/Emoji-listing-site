@@ -78,7 +78,7 @@ export default {
 
       if (index != this.sidebarLastIndex)
         $("#side-panel-clear").css("color", "#2c3e50");
-      else $("#side-panel-clear").css("color", "white");
+      else $("#side-panel-clear").css("color", "#cdf1ff");
     }
   }
 };
@@ -102,7 +102,8 @@ export default {
     bottom: 10px;
 
     font-size: 2em;
-    color: rgb(90, 90, 90);
+    //color: rgb(90, 90, 90);
+    color: white;
     input {
       border: 0;
       width: 250px;
@@ -142,7 +143,6 @@ export default {
         color: rgb(0, 135, 189);
         font-weight: 100;
       }
-      background: white;
     }
   }
 
@@ -187,7 +187,6 @@ export default {
     height: 440px;
     width: 50px;
     border-radius: 0 10px 10px 0;
-    background: rgb(221, 245, 255);
 
     user-select: none;
 
@@ -196,12 +195,12 @@ export default {
     #side-panel-clear {
       font-size: 0.55em;
       margin-top: 15px;
-      color: white;
+      //color: white;
     }
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1260px) {
   #upper {
     height: 400px;
     justify-content: center !important;
@@ -227,6 +226,34 @@ export default {
 
   #side-panel {
     top: -150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #upper {
+    height: 400px;
+    justify-content: center !important;
+
+    #preview {
+      display: none;
+    }
+
+    #title-div {
+      top: 0 !important;
+    }
+  }
+
+  #emojis {
+    position: relative;
+    top: -330px !important;
+  }
+
+  #search {
+    top: -330px;
+  }
+
+  #side-panel {
+    top: -330px;
   }
 }
 </style>

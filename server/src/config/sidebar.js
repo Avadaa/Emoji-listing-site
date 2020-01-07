@@ -1,3 +1,5 @@
+// [startId, endId, icon] of a group
+
 exports.ids = [
     [0, 385, '😄'], // Smileys
     [386, 1783, '👷'], // People

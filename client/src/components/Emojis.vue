@@ -54,7 +54,7 @@ export default {
           .val()
           .toLowerCase();
 
-        if (value == "") $("#side-panel-clear").css("color", "white");
+        if (value == "") $("#side-panel-clear").css("color", "#cdf1ff");
         else $("#side-panel-clear").css("color", "#2c3e50");
 
         value == ""
@@ -64,7 +64,7 @@ export default {
             )
           : $("#search input").css(
               "border-bottom",
-              "2px solid rgb(0, 135, 189)"
+              "2px solid rgb(166, 230, 255)"
             );
 
         $("#emoji-list div:not(.copied)").filter(function() {
@@ -219,11 +219,9 @@ export default {
     padding: 5px;
 
     font-size: 50px;
-    border: 2px solid white;
     border-radius: 5px;
 
     &:hover {
-      border: 2px solid rgb(207, 207, 207);
       cursor: default;
     }
   }
