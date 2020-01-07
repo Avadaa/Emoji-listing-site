@@ -208,7 +208,7 @@ export default {
 
     #preview {
       position: relative;
-      top: 50px;
+      top: 60px;
     }
 
     #title-div {
