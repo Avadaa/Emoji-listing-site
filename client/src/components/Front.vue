@@ -12,13 +12,27 @@
     <div id="search">
       <input type="text" name="search" autocomplete="off" placeholder="Search" />
     </div>
-    <div id="emojis">
-      <div id="groups">
-        <h2 id="groupH2"></h2>
-        <h2 id="subGroupH2"></h2>
-      </div>
+    <div id="emoji-panel">
+      <div id="emojis">
+        <div id="groups">
+          <h2 id="groupH2"></h2>
+          <h2 id="subGroupH2"></h2>
+        </div>
 
-      <Emojis />
+        <Emojis />
+      </div>
+      <div id="side-panel">
+        <div id="panel-smiley">😀</div>
+        <div id="panel-body">👷</div>
+        <div id="panel-animal">🐶</div>
+        <div id="panel-flower">🌻</div>
+        <div id="panel-food">🍕</div>
+        <div id="panel-place">🏘️</div>
+        <div id="panel-weather">☁️</div>
+        <div id="panel-activity">♟️</div>
+        <div id="panel-object">▶️</div>
+        <div id="panel-flag">🏴</div>
+      </div>
     </div>
   </div>
 </template>
@@ -43,11 +57,15 @@ export default {
   align-items: center;
   flex-direction: column;
 
+  #emoji-panel {
+    display: flex;
+  }
+
   #search {
     position: relative;
     height: 40px;
 
-    left: calc(40vw - 125px);
+    left: calc(40vw - 135px);
     bottom: 10px;
 
     font-size: 2em;
@@ -73,6 +91,8 @@ export default {
   #emojis {
     width: 80vw;
     height: 70vh;
+    position: relative;
+    left: 15px;
 
     overflow-y: auto;
 
@@ -102,7 +122,7 @@ export default {
 
     #title-div {
       position: absolute;
-      width: 99vw;
+      width: 98vw;
       left: 0;
       h1 {
         font-size: 3em;
@@ -125,6 +145,19 @@ export default {
         font-size: 100px;
       }
     }
+  }
+
+  #side-panel {
+    position: relative;
+    left: 15px;
+    height: 440px;
+    width: 50px;
+    border-radius: 0 10px 10px 0;
+    background: rgb(221, 245, 255);
+
+    user-select: none;
+
+    font-size: 2em;
   }
 }
 
@@ -149,6 +182,10 @@ export default {
   }
 
   #search {
+    top: -150px;
+  }
+
+  #side-panel {
     top: -150px;
   }
 }

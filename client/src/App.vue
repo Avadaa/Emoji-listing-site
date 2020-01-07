@@ -37,7 +37,7 @@ export default {
   }
 
   ::-webkit-scrollbar-track {
-    border-radius: 10px;
+    border-radius: 10px 0 10px 10px;
   }
 }
 
