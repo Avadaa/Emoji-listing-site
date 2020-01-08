@@ -23,7 +23,8 @@
         <Emojis :child="child" ref="form" />
       </div>
       <div id="side-panel">
-        <div v-for="(emoji, index) in sidebar">
+        <div id="side-panel-clear" v-on:click="filter(sidebarMaxIndex)">Clear</div>
+        <div v-for="(emoji, index) in sidebar" v-if="index != sidebarMaxIndex">
           <div
             v-html="emoji[2]"
             v-on:click="filter(index)"
@@ -31,7 +32,6 @@
             style="border: 2px solid rgb(166, 230, 255)"
           ></div>
         </div>
-        <div id="side-panel-clear" v-on:click="filter(sidebarLastIndex)">Clear</div>
       </div>
     </div>
   </div>
@@ -47,14 +47,24 @@ export default {
   data() {
     return {
       sidebar: [],
-      sidebarLastIndex: 0,
+      sidebarMaxIndex: 0,
       child: {}
     };
   },
   async created() {
     let sidebar = await Api.getSidebar();
     this.sidebar = sidebar.data;
-    this.sidebarLastIndex = sidebar.data.length - 1;
+    this.sidebarMaxIndex = sidebar.data.length - 1;
+  },
+  mounted() {
+    setTimeout(() => {
+      for (let i = 0; i < this.sidebarMaxIndex; i++) {
+        if (i == 0)
+          $($(".side-panel-element")[i]).css({ "border-radius": "0 10px 0 0" });
+        if (i == this.sidebarMaxIndex - 1)
+          $($(".side-panel-element")[i]).css({ "border-radius": "0 0 10px 0" });
+      }
+    }, 100);
   },
   methods: {
     filter(index) {
@@ -67,19 +77,18 @@ export default {
       let sidebar = this.sidebar;
       let EmojiChild = this.$refs.form;
 
-      for (let i = 0; i < $(".side-panel-element").length - 1; i++)
+      for (let i = 0; i < $(".side-panel-element").length; i++)
         $($(".side-panel-element")[i]).css({
           background: "rgb(166, 230, 255)",
-          border: "2px solid rgb(166, 230, 255)"
+          "border-color": "rgb(166, 230, 255)"
         });
 
-      if (index != this.sidebarLastIndex)
+      if (index != $("#side-panel").children().length - 1)
         $($(".side-panel-element")[index]).css({
           background: "rgb(129, 219, 255)",
-          border: "2px solid rgb(80, 185, 255)",
+          "border-color": "rgb(80, 185, 255)",
           "border-left": "0"
         });
-
       $("#emoji-list div:not(.copied)").filter(function() {
         $(this).toggle(
           $(this)
@@ -95,9 +104,9 @@ export default {
       $("#emojis").scrollTop(0);
       EmojiChild.scroll();
 
-      if (index != this.sidebarLastIndex)
+      if (index != this.sidebarMaxIndex)
         $("#side-panel-clear").css("color", "#2c3e50");
-      else $("#side-panel-clear").css("color", "rgb(166, 230, 255)");
+      else $("#side-panel-clear").css("color", "#cdf1ff");
     }
   }
 };
@@ -211,7 +220,7 @@ export default {
   #side-panel {
     position: relative;
     left: 15px;
-    height: 450px;
+    height: 388px;
     width: 50px;
     border-radius: 0 10px 10px 0;
     border-left: 1px dashed rgb(133, 200, 209);
@@ -221,12 +230,16 @@ export default {
     font-size: 1.65em;
 
     #side-panel-clear {
+      position: relative;
+      top: -50px;
       font-size: 0.7em;
       margin-top: 15px;
-      color: rgb(166, 230, 255);
+      color: #cdf1ff;
     }
 
     .side-panel-element {
+      position: relative;
+      top: -38px;
       &:hover {
         background: rgb(129, 219, 255) !important;
       }
@@ -262,6 +275,11 @@ export default {
     #preview {
       display: none;
     }
+  }
+
+  #side-panel,
+  #emojis {
+    left: 5px !important;
   }
 
   h2:first-child {
