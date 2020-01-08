@@ -24,9 +24,9 @@
       </div>
       <div id="side-panel">
         <div v-for="(emoji, index) in sidebar">
-          <div v-html="emoji[2]" v-on:click="scroll(index)"></div>
+          <div v-html="emoji[2]" v-on:click="filter(index)" class="side-panel-element"></div>
         </div>
-        <div id="side-panel-clear" v-on:click="scroll(sidebarLastIndex)">Clear</div>
+        <div id="side-panel-clear" v-on:click="filter(sidebarLastIndex)">Clear</div>
       </div>
     </div>
   </div>
@@ -52,7 +52,7 @@ export default {
     this.sidebarLastIndex = sidebar.data.length - 1;
   },
   methods: {
-    scroll(index) {
+    filter(index) {
       $("input").val("");
       $("#search input").css(
         "border-bottom",
@@ -61,6 +61,23 @@ export default {
 
       let sidebar = this.sidebar;
       let EmojiChild = this.$refs.form;
+
+      /* $(child).css({
+          background: "background: rgb(166, 230, 255)",
+          border: "0"
+        }); */
+      //for (let child in $("#side-panel").children())
+      for (let i = 0; i < $("#side-panel").children().length; i++)
+        $($("#side-panel").children()[i]).css({
+          background: "rgb(166, 230, 255)",
+          border: "0"
+        });
+
+      $($("#side-panel").children()[index]).css({
+        background: "rgb(129, 219, 255)",
+        border: "2px solid rgb(80, 185, 255)",
+        "border-left": "0"
+      });
 
       $("#emoji-list div:not(.copied)").filter(function() {
         $(this).toggle(
@@ -206,6 +223,12 @@ export default {
       font-size: 0.55em;
       margin-top: 15px;
       color: #cdf1ff;
+    }
+
+    .side-panel-element {
+      &:hover {
+        background: rgb(129, 219, 255);
+      }
     }
   }
 }

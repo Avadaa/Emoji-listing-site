@@ -57,6 +57,12 @@ export default {
         if (value == "") $("#side-panel-clear").css("color", "#cdf1ff");
         else $("#side-panel-clear").css("color", "#2c3e50");
 
+        for (let i = 0; i < $("#side-panel").children().length; i++)
+          $($("#side-panel").children()[i]).css({
+            background: "rgb(166, 230, 255)",
+            border: "0"
+          });
+
         value == ""
           ? $("#search input").css(
               "border-bottom",
