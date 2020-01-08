@@ -54,13 +54,14 @@ export default {
           .val()
           .toLowerCase();
 
-        if (value == "") $("#side-panel-clear").css("color", "#cdf1ff");
+        if (value == "")
+          $("#side-panel-clear").css("color", "rgb(166, 230, 255)");
         else $("#side-panel-clear").css("color", "#2c3e50");
 
-        for (let i = 0; i < $("#side-panel").children().length; i++)
-          $($("#side-panel").children()[i]).css({
+        for (let i = 0; i < $(".side-panel-element").length - 1; i++)
+          $($(".side-panel-element")[i]).css({
             background: "rgb(166, 230, 255)",
-            border: "0"
+            border: "2px solid rgb(166, 230, 255)"
           });
 
         value == ""
