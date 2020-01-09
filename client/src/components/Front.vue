@@ -64,7 +64,7 @@ export default {
         if (i == this.sidebarMaxIndex - 1)
           $($(".side-panel-element")[i]).css({ "border-radius": "0 0 10px 0" });
       }
-    }, 100);
+    }, 500);
   },
   methods: {
     filter(index) {
