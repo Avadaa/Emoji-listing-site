@@ -26,23 +26,23 @@ export default {
   },
   async created() {
     this.emojis = emojis;
-
-    // Scrolling the emoji-list
-    // After the scrolling has started, wait 300ms and fire the scroll() -function
-    let scrolling = false;
-    $("#emojis").scroll(() => {
-      if (!scrolling) {
-        scrolling = true;
-
-        setTimeout(() => {
-          this.scroll();
-          scrolling = false;
-        }, 300);
-      }
-    });
   },
   mounted() {
     setTimeout(() => {
+      // Scrolling the emoji-list
+      // After the scrolling has started, wait 300ms and fire the scroll() -function
+      let scrolling = false;
+      $("#emojis").scroll(() => {
+        if (!scrolling) {
+          scrolling = true;
+
+          setTimeout(() => {
+            this.scroll();
+            scrolling = false;
+          }, 300);
+        }
+      });
+
       this.scroll();
       this.hoverEmoji();
 
