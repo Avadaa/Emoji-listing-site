@@ -12,4 +12,5 @@ exports.ids = [
     [2551, 2763, '▶️'], // Symbols
     [2764, 3031, '🏴'], // Flags
     [0, 3031] //Clear category
+
 ]

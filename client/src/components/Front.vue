@@ -39,7 +39,7 @@
 
 <script>
 import Emojis from "./Emojis";
-import Api from "../services/EmojiService";
+import sidebar from "../assets/sidebar";
 
 export default {
   name: "Front",
@@ -52,9 +52,8 @@ export default {
     };
   },
   async created() {
-    let sidebar = await Api.getSidebar();
-    this.sidebar = sidebar.data;
-    this.sidebarMaxIndex = sidebar.data.length - 1;
+    this.sidebar = sidebar.ids;
+    this.sidebarMaxIndex = sidebar.ids.length - 1;
   },
   mounted() {
     setTimeout(() => {

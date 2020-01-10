@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Api from "../services/EmojiService";
+import emojis from "../assets/emojis.json";
 
 export default {
   name: "Emojis",
@@ -25,8 +25,7 @@ export default {
     };
   },
   async created() {
-    let emojis = await Api.getEmojis();
-    this.emojis = emojis.data;
+    this.emojis = emojis;
 
     // Scrolling the emoji-list
     // After the scrolling has started, wait 300ms and fire the scroll() -function
