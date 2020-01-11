@@ -1,5 +1,3 @@
-let db = require('./dbQueries');
-
 let readFile = require('readline').createInterface({
     input: require('fs').createReadStream('./data/emojis.txt')
 })
@@ -52,11 +50,6 @@ readFile.on('line', (line) => {
         if (title.charAt(title.length - 1) == '"')
             title = title.substring(0, title.length - 1)
     }
-
-    /* if (hexHtml.length > 1) {
-        let emojiQuery = `INSERT INTO emojis (emoji, title, subgroup, majorgroup) VALUES('${hexHtml}', '${title}', '${subgroup}', '${group}')`
-        db.query(emojiQuery)
-    } */
 
     if (hexHtml.length > 1)
         emojis.push({ id: id++, hex: hexHtml, title, subgroup, group })
