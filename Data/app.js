@@ -58,7 +58,7 @@ readFile.on('line', (line) => {
 
 
 setTimeout(() => {
-    require('fs').writeFile('./server/emojis.json', JSON.stringify(emojis), (err) => {
+    require('fs').writeFile('./client/src/assets/emojis.json', JSON.stringify(emojis), (err) => {
         if (err) console.log(err)
     })
 }, 5000); 
