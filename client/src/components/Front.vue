@@ -51,6 +51,7 @@ export default {
       child: {}
     };
   },
+  // Import and store the sidebar-data
   async created() {
     this.sidebar = sidebar.ids;
     this.sidebarMaxIndex = sidebar.ids.length - 1;
@@ -76,6 +77,7 @@ export default {
       let sidebar = this.sidebar;
       let EmojiChild = this.$refs.form;
 
+      // Visual changes on the sidebar
       for (let i = 0; i < $(".side-panel-element").length; i++)
         $($(".side-panel-element")[i]).css({
           background: "rgb(166, 230, 255)",
@@ -88,6 +90,8 @@ export default {
           "border-color": "rgb(80, 185, 255)",
           "border-left": "0"
         });
+
+      // When a category on the sidebar is clicked, hide all the other emojis
       $("#emoji-list div:not(.copied)").filter(function() {
         $(this).toggle(
           $(this)
@@ -101,7 +105,7 @@ export default {
         );
       });
       $("#emojis").scrollTop(0);
-      EmojiChild.scroll();
+      EmojiChild.scroll(); // Have the visible groups shown right
 
       if (index != this.sidebarMaxIndex)
         $("#side-panel-clear").css("color", "#2c3e50");

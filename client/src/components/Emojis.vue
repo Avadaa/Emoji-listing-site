@@ -48,20 +48,25 @@ export default {
 
       let emojiArr = this.emojis;
       let dis = this;
+
+      // When tryping on the search
       $("input").on("keyup", function() {
         let value = $(this)
           .val()
           .toLowerCase();
 
+        // hide the 'clear' -button if the search is empty
         if (value == "") $("#side-panel-clear").css("color", "#cdf1ff");
         else $("#side-panel-clear").css("color", "#2c3e50");
 
+        // Reset the sidepanel visuals
         for (let i = 0; i < $(".side-panel-element").length; i++)
           $($(".side-panel-element")[i]).css({
             background: "rgb(166, 230, 255)",
             "border-color": "rgb(166, 230, 255)"
           });
 
+        // Change the search input's style
         value == ""
           ? $("#search input").css(
               "border-bottom",
@@ -72,6 +77,7 @@ export default {
               "2px solid rgb(166, 230, 255)"
             );
 
+        // Display the wanted emojis
         $("#emoji-list div:not(.copied)").filter(function() {
           $(this).toggle(
             emojiArr[
@@ -87,7 +93,7 @@ export default {
         dis.scroll();
       });
     }, 1000);
-    this.scroll();
+    this.scroll(); // Update the group and subgroup of the visible emojis after the search has occurred
   },
   methods: {
     hoverEmoji() {
@@ -163,6 +169,7 @@ export default {
       this.changeGroups(first, last);
     },
 
+    // Update the texts regarding groups
     changeGroups(first, last) {
       if (first == -1 || last == -1) {
         $("#groupH2").text("No emojis found");
@@ -187,6 +194,7 @@ export default {
       }
     },
 
+    // Copy the wanted element to user's clipboard
     copy(e, id) {
       let input = document.createElement("input");
       document.body.appendChild(input);

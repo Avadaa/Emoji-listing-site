@@ -9,7 +9,7 @@ let emojis = []
 let id = 0;
 
 
-
+// Go through 'emojis.txt' and all the needed information from the lines
 readFile.on('line', (line) => {
     line = line.split('\t')
 
@@ -56,7 +56,7 @@ readFile.on('line', (line) => {
 })
 
 
-
+// Store the data into a .json
 setTimeout(() => {
     require('fs').writeFile('./client/src/assets/emojis.json', JSON.stringify(emojis), (err) => {
         if (err) console.log(err)
