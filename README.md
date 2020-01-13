@@ -2,7 +2,7 @@
 
 https://www.emojiwall.com/#/
 
-A site that lists all the major emojis out there. This project was mainly made for educational purposes. The main focus was to have a easy-to-use -web page to copy wanted emoji(s) without any extra hassle.
+A site that lists all the major emojis out there. This project was mainly made for educational purposes. The focus was to have an easy-to-use web page to copy wanted emoji(s) without any extra hassle.
 
 What I learned (after the cryptocurrency exchange):
 - Mobile responsiveness
