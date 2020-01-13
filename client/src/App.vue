@@ -66,6 +66,9 @@ body {
   ::-webkit-scrollbar-track {
     border-radius: 10px 0 10px 10px;
   }
+
+  // Firefox
+  scrollbar-color: rgb(121, 174, 197) rgb(166, 230, 255);
 }
 
 ::-webkit-scrollbar {
